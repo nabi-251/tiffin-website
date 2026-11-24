@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Amma's Tiffin House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Amma's Tiffin House</h1>
+    <p>Fresh & Tasty South Indian Foods</p>
+    <a href="index.html">Home</a>
+</header>
+
+<section class="menu-section">
+
+```
+<h2>Our Delicious Menu 🍽️</h2>
+
+<div class="food-grid">
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=700" alt="Idli">
+        <h3>Soft Idli</h3>
+        <p>Soft idli with coconut chutney.</p>
+        <h4>₹30</h4>
+        <button class="add-btn" data-name="Soft Idli" data-price="30">Add to Cart</button>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=700" alt="Dosa">
+        <h3>Crispy Dosa</h3>
+        <p>Golden crispy dosa with sambar.</p>
+        <h4>₹40</h4>
+        <button class="add-btn" data-name="Crispy Dosa" data-price="40">Add to Cart</button>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=700" alt="Poori">
+        <h3>Poori</h3>
+        <p>Hot poori with potato masala.</p>
+        <h4>₹35</h4>
+        <button class="add-btn" data-name="Poori" data-price="35">Add to Cart</button>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700" alt="Vada">
+        <h3>Crispy Vada</h3>
+        <p>Crunchy medu vada with chutney.</p>
+        <h4>₹15</h4>
+        <button class="add-btn" data-name="Crispy Vada" data-price="15">Add to Cart</button>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1630409346824-4f0e7b080087?w=700" alt="Pongal">
+        <h3>Ven Pongal</h3>
+        <p>Hot pongal with pepper and ghee.</p>
+        <h4>₹45</h4>
+        <button class="add-btn" data-name="Ven Pongal" data-price="45">Add to Cart</button>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=700" alt="Upma">
+        <h3>Rava Upma</h3>
+        <p>Traditional South Indian breakfast.</p>
+        <h4>₹30</h4>
+        <button class="add-btn" data-name="Rava Upma" data-price="30">Add to Cart</button>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=700" alt="Masala Dosa">
+        <h3>Masala Dosa</h3>
+        <p>Dosa filled with potato masala.</p>
+        <h4>₹55</h4>
+        <button class="add-btn" data-name="Masala Dosa" data-price="55">Add to Cart</button>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=700" alt="Uttapam">
+        <h3>Onion Uttapam</h3>
+        <p>Soft uttapam topped with onions.</p>
+        <h4>₹45</h4>
+        <button class="add-btn" data-name="Onion Uttapam" data-price="45">Add to Cart</button>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=700" alt="Meals">
+        <h3>South Indian Meals</h3>
+        <p>Traditional rice meals with sides.</p>
+        <h4>₹80</h4>
+        <button class="add-btn" data-name="South Indian Meals" data-price="80">Add to Cart</button>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=700" alt="Chapati">
+        <h3>Chapati</h3>
+        <p>Soft chapati with kurma.</p>
+        <h4>₹40</h4>
+        <button class="add-btn" data-name="Chapati" data-price="40">Add to Cart</button>
+    </article>
+
+</div>
+```
+
+</section>
+
+<section class="cart-section">
+
+```
+<h2>🛒 Your Cart</h2>
+
+<div id="cart-items">
+    <p>Your cart is empty!</p>
+</div>
+
+<h3>Total: ₹<span id="cart-total">0</span></h3>
+
+<button id="clear-cart">Clear Cart</button>
+```
+
+</section>
+<!-- CUSTOMER ORDER FORM -->
+
+<section class="order-section">
+
+    <h2>Place Your Order 🛍️</h2>
+
+    <form id="order-form">
+
+        <label>Customer Name</label>
+        <input type="text" id="customer-name"
+               placeholder="Enter your name" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" id="customer-phone"
+               placeholder="Enter 10 digit mobile number"
+               pattern="[0-9]{10}" required>
+
+        <label>Pickup Time</label>
+        <select id="pickup-time" required>
+            <option value="">Select Pickup Time</option>
+            <option>8:00 AM - 9:00 AM</option>
+            <option>9:00 AM - 10:00 AM</option>
+            <option>10:00 AM - 11:00 AM</option>
+            <option>5:00 PM - 6:00 PM</option>
+            <option>6:00 PM - 7:00 PM</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+    <div id="order-message"></div>
+
+</section>
+<script src="menu.js"></script>
+
+</body>
+</html>
